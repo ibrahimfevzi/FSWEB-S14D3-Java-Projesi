@@ -19,17 +19,25 @@ public class CarSkeleton {
     }
 
 
-    public void startEngine() {
-        System.out.println("Engine started.");
+    public String startEngine() {
+        System.out.println( "Class Name: " + this.getClass().getSimpleName());
+        return getName() + " is starting engine.";
     }
 
-    public void drive() {
-        System.out.println("Car is being driven.");
-        runEngine();
+    public String drive() {
+        runEngine(this);
+        return getName() + " is being driven.";
     }
 
-    protected void runEngine() {
-        System.out.println("Engine is running.");
+    protected void runEngine(CarSkeleton carSkeleton) {
+        if (carSkeleton instanceof GasPoweredCar){
+            System.out.println("Gas-powered engine started.");
+        }else if (carSkeleton instanceof ElectricCar){
+            System.out.println("Electric engine started.");
+        }else if (carSkeleton instanceof HybridCar){
+            System.out.println("Hybrid engine started.");
+
+        }
     }
 
 

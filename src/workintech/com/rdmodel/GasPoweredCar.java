@@ -21,14 +21,5 @@ public class GasPoweredCar extends CarSkeleton {
 
 
 
-    @Override
-    public void startEngine() {
-        System.out.println("Gas-powered engine started.");
-    }
 
-    @Override
-    public void drive() {
-        System.out.println("Gas-powered car is being driven.");
-        runEngine();
     }
-}

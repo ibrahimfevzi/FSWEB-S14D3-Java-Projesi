@@ -18,14 +18,5 @@ public class ElectricCar extends CarSkeleton {
         return batterySize;
     }
 
-    @Override
-    public void startEngine() {
-        System.out.println("Electric engine started.");
-    }
 
-    @Override
-    public void drive() {
-        System.out.println("Electric car is being driven.");
-        runEngine();
-    }
 }
