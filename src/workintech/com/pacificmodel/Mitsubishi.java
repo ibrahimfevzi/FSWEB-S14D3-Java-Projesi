@@ -6,6 +6,7 @@ public class Mitsubishi extends Car{
         super(cylinders, name);
     }
 
+    /*
     public String startEngine() {
         return "the " + getClass().getSimpleName() + "'s engine is starting.";
     }
@@ -17,4 +18,6 @@ public class Mitsubishi extends Car{
     public String brake() {
         return "the " + getClass().getSimpleName() + " is braking.";
     }
+
+     */
 }
